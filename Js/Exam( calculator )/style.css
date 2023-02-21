@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+
+.parent{
+	display:flex;
+	flex-direction:column;
+	padding:30px;
+	background:grey;
+	border-radius:10px;
+}
+
+
+.parent h1{
+	text-align:center;
+	font-size:2em;
+}
+
+.parent button{
+	margin:20px 0;
+	width:50%;
+	margin-left:50px;
+}
+.parent select{
+	width:50%;
+	padding:5px;
+	font-size:1.5em;
+	margin-left:50px;
+}
+
+.parent input[type= "text"]{
+	padding:10px 5px;
+	margin:10px ;
+
+
+}
+
+.parent button{
+	padding:5px 0;
+}
+
+

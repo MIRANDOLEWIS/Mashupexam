@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	box-sizing:border-box;
+}
+
+.p1{
+	background:skyblue;
+  height:100vh;
+}
+.c1{
+  background:white;
+ 
+}

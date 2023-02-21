@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	box-sizing:border-box;
+}
+
+.lin{
+	padding:2px
+}
+
+.lin a:hover{
+	text-decoration:none;
+}
+.lin li{
+	list-style:none;
+}
+
+.lin:hover{
+	background:skyblue;
+}
+
+p{
+	font-size:15px;
+}

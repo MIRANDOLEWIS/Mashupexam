@@ -1,0 +1,139 @@
+*{
+
+	margin:0;
+	box-sizing:border-box;
+}
+
+.parent{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	flex-direction:row;
+
+}
+
+.child2{
+
+	font-family: sans-serif;
+	height:100vh;
+	width:50%;
+	position:relative;
+
+}
+.child1{
+
+	height:100vh;
+	width:50%;
+	background:tomato;
+
+}
+
+.pos{
+	position:absolute;
+	
+	left:50px;
+	top:250px;
+}
+
+.pos h1{
+    margin-bottom:20px;
+    color:tomato;
+}
+
+.pos label{
+	font-weight:bold;
+	font-family:sans-serif;
+}
+
+.pos input[type="text"]{
+	padding:8px 5px;
+	width:450px;
+	margin:10px 0;
+}
+
+.pos input[type="password"]{
+   padding:8px 5px;
+   width:450px;
+   margin:10px 0;  
+}
+
+.pos input[type="submit"]{
+	width:450px;
+	color:white;
+	background:tomato;
+    border:none;
+    margin-top:20px;
+    padding:10px;
+    font-size:1.3em;
+}
+
+@media(max-width:1200px){
+
+	.pos input[type="text"]{
+	
+	width:300px;
+	
+}
+
+.pos input[type="password"]{
+   
+   width:300px;
+ 
+}
+
+.pos input[type="submit"]{
+	width:300px;
+	
+}
+
+}
+
+@media(max-width:700px){
+
+	.pos input[type="text"]{
+	
+	width:200px;
+	
+}
+
+.pos input[type="password"]{
+   
+   width:200px;
+ 
+}
+
+.pos input[type="submit"]{
+	width:200px;
+	
+}
+
+}
+@media(max-width:500px){
+
+.pos input[type="text"]{
+	
+	width:300px;
+	
+}
+
+.pos input[type="password"]{
+   
+   width:300px;
+ 
+}
+
+.pos input[type="submit"]{
+	width:300px;
+	
+}
+
+	.child1{
+		display:none;
+	}
+
+	.child2{
+		width:100%;
+	}
+
+}

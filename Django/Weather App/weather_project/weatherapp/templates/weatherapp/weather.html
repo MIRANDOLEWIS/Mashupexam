@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<title>Weather App</title>
+</head>
+<body>
+
+<header class="head">
+	{% load static %}
+	<img src="{% static 'images/cloudy.png' %}">
+	<h1>Weather App</h1>
+	
+
+</header>
+
+<div class="main_weather">
+
+	<div class="search">
+      <form method="POST" action="">
+		{% csrf_token %}
+        <input type="text" placeholder="City" name="city" required>
+		<input type="submit" value="Search">
+	  </form>
+	</div>
+
+	<div class="data" data-aos="fade-left" data-aos-duration="1000"  data-aos-mirror="true"
+    data-aos-once="false">
+		{% if city_weather %}
+        <img src="http://api.openweathermap.org/img/w/{{city_weather.icon}}.png" alt="icons">
+		<h2>City : {{city_weather.city }}</h2>
+		<h3>Temperature : {{city_weather.temperature}} &#8451;</h3>
+		<h3>Conditon: {{ city_weather.description }}</h3>
+		{% else %}
+		<h1>Check Out The Climate....</h1>
+		{% endif %}
+	</div>
+	
+</div>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>

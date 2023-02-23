@@ -1,0 +1,39 @@
+{% extends "customer/base.html" %}
+
+{% block content %}
+
+<div class="chi3">
+  <h2>Edit Medicine</h2> 
+    {% load static %}
+  <div class="med_box">
+    
+    <img src="{% static 'images/kit.png' %}" alt="signup" width="70" height="80">
+    <p>{{ customer.borrower }}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+      <div>
+          {{ editform.med_name }}
+      </div>
+      <br>
+      <div>
+        {{ editform.disease }}
+      </div>
+      <br>
+      <div>
+        {{ editform.med_price }}
+      </div>
+      <br>
+      <br>
+    <div>
+        <input type="submit" value="Edit Medicien" class="btn btn-primary">
+    </div>
+    
+    </form>
+
+</div> 
+
+</div>
+
+
+
+{% endblock %}

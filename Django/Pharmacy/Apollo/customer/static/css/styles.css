@@ -1,0 +1,105 @@
+/* main */
+
+.chi1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    flex-direction:column;
+
+}
+
+.list_box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:40px;
+ 
+    border-radius:20px;
+}
+
+.login_box input[type ="submit"]{
+       padding:10px 40px;
+       border-radius:10px;
+       margin-left:30px;
+}
+.sign_box input[type ="submit"]{
+    padding:10px 40px;
+    border-radius:10px;
+    margin-left:30px;
+}
+
+.sign_box img{
+    margin-left:50px;
+    margin-bottom:20px;
+}
+
+
+
+.sign_box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:40px;
+    border-radius:20px;
+}
+
+
+
+/* list */
+
+.login_box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:40px;
+    border-radius:20px;
+}
+
+/* create med */
+
+.chi3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    flex-direction:column;
+}
+
+.med_box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:40px;
+    border-radius:20px;
+}
+
+
+/* del page */
+
+.chi4{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    flex-direction:column;
+    
+}
+
+
+.del_box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:20vh;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:120px;
+    border-radius:20px;
+  
+    
+}
+
+.del_box a{
+    margin:30px;
+}
+
+
+
+@media (max-width:576px){
+    .chi1 h1{
+        font-size:2em;
+    }
+}

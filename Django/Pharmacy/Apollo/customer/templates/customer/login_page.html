@@ -1,0 +1,64 @@
+{% extends "customer/base.html" %}
+
+{% block content %}
+
+<div class="chi3">
+
+  <div class="login_box">
+
+<div>
+   <!-- modal -->
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-danger" role="alert">
+        
+        <p>{{ message }}</p>
+       
+      </div>
+      {% endfor %}
+      {% endif %}
+      <!-- end -->
+
+<div>
+  {% load static %}    
+  <img src="{% static 'images/user.png' %}" alt="login_img">
+
+     <form action="" method="post">
+      {% csrf_token %}
+      
+      
+    
+      <div>
+      
+
+      <label>Username : </label>
+      <br>
+      <input type="text" name="username" class="input-form">
+      <br><br>
+      </div>
+
+      <div>
+      <label>Password : </label>
+      <br>
+      <input type="password" name="password" class="input-form">
+      </div>
+
+      <div>
+        <br>
+        <input type="submit" value="Login" class="btn-primary" >
+      </div> 
+      
+    </form>
+
+  </div>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

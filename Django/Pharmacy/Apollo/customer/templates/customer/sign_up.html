@@ -1,0 +1,70 @@
+{% extends "customer/base.html" %}
+
+{% block content %}
+
+<div class="chi3">
+
+    <div class="sign_box">
+
+<div >
+     <!-- modal -->
+     {% if error %}
+     
+     <div class="alert alert-danger" role="alert">
+       
+       <p>{{ error }}</p>
+      
+     </div>
+    
+     {% endif %}
+     <!-- end -->
+    {% load static %}
+  <div> 
+    <img src="{% static 'images/signup.png' %}" alt="signup" width="80" height="90">
+
+    <form action="" method="post">
+        {% csrf_token %}
+    <div>
+        
+        
+        {{ form.username }}
+    </div>
+    <br>
+    <div>
+       
+    
+        {{form.firstname}}
+    </div>
+    <br>
+    <div>
+       
+    
+        {{form.lastname}}
+    </div>
+    <br>
+    <div>
+        
+    
+        {{form.email}}
+    </div>
+    <br>
+    <div>
+       
+        
+        {{form.password}}
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Sign-up" class="btn btn-primary">
+    </div>
+    
+    </form>
+
+</div> 
+
+</div>
+
+</div>
+</div>
+
+{% endblock %}

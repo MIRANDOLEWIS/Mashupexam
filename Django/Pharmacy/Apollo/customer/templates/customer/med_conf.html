@@ -1,0 +1,17 @@
+{% extends "customer/base.html" %}
+
+{% block content %}
+
+
+<div class="chi4">
+
+    <div class="del_box">
+       <h3 style="font-weight:lighter;">Are you sure wanna delete <span style="font-weight:bolder;">{{ med.med_name }}</span> medicine ? </h3>
+
+       <a href="{% url 'med_del_link' pk=med.id  %}"><button type="button" class="btn btn-danger text-light offset-5">Delete</button></a>
+    </div>
+
+</div>
+
+
+{% endblock %}
